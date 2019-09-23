@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
+
+.headerTitle {
+    background-color: rgb(78, 170, 164);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: -10px;
+}
+
+.pageHeaderTitle {
+    color: white;
+}
+
+.mainPageContainer {
+    position: relative;
+    margin-top: 120px;
+    background-color: white;
+    padding: 5px;
+    align-content: center;
+    font-family: 'Teko', sans-serif;
+}
+
+h2 {
+    color: rgb(78, 170, 164);
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+p {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+h3 {
+    background-color: rgb(78, 170, 164);
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding: 5px;
+    bottom: 120px;
+    width: 80%;
+    margin: 15px;
+    width: 70%;
+}
+
+img {
+    position: absolute;
+    margin: 15px;
+    width: 70%;
+    height: 70%;
+    border: 1px solid lightgray;
+}
+
+section {
+    width: 400px;
+    height: 400px;
+}
+
+h5 {
+    color: white; 
+    text-align: center;
+}
+
+.gridTile {
+    width: 200px;
+    height: 200px;
+}
