@@ -11,29 +11,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body background="./Assets/images/Background.png">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand headerTitle" href="#"> <h1 class="pageHeaderTitle">Aditya Athavale</h1></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="widthAdustment"></div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <div id="nav-placeholder"></div>
       <div class="mainPageContainer">
         <div class=row>
           <div class="col-md-12">
@@ -76,11 +58,18 @@
               </ul>
           </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-          <div style="text-align: center; width: 100%">
-              <h5>©Copyright</h5>
-          <div>
-      </nav>
+      <div id="bottom-nav-placeholder"></div>
     </div>
+
+    <!-- Scripts -->
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("http://localhost:8000/navBar.html");
+        });
+
+        $(function(){
+            $("#bottom-nav-placeholder").load("http://localhost:8000/bottomBar.html");
+        });
+    </script>
 </body>
 </html>
