@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
 
+html, body {
+    widows: 960px;
+    margin: auto;
+}
 .headerTitle {
     background-color: rgb(78, 170, 164);
     color: white;
@@ -12,6 +16,12 @@
     color: white;
 }
 
+.widthAdustment {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .mainPageContainer {
     position: relative;
     margin-top: 120px;
@@ -19,6 +29,7 @@
     padding: 5px;
     align-content: center;
     font-family: 'Teko', sans-serif;
+    margin-bottom: 10%;
 }
 
 h2 {
@@ -45,11 +56,11 @@ h3 {
 }
 
 img {
-    position: absolute;
     margin: 15px;
     width: 70%;
     height: 70%;
     border: 1px solid lightgray;
+    object-fit: contain;
 }
 
 section {
